@@ -18,8 +18,9 @@ install:
 script:
 - cd decide
 - cp travis.py local_settings.py
-- python3 ./manage.py test --keepdb
+- python ./manage.py test --keepdb
 deploy:
   provider: heroku
   api_key:
     secure: aWNdaOVZ1qETGkAxNQLLPDgeCcgeD7a9rIrogQNT5dmlmaNJ80kdadjmwIzSiOBorxsUHfO9gfXdJlJ6EUoZotoLq4R/ZrG1KycjvoCkUMLCvJ4LYSLn5SQXMdpMuqE5zrPEl42J4ZwH+0p3JpTzuVgQFUwhaxixbucQVP9/hpTanV4jlrbOVMieGDkUJfjGocdK/FrTo2ZsELrs0aTHjtIhD0fv/Z4XZPDZIgLA3AL1hTrDcQnXlnBj4euzMgG4bqtCZYxjalpGEIozFyGvZlh2fCErVTHxRoQTu96eMlRifDCgrIUWRv0aJbtI3A8xS+Yj7ANOIsbT/yczome3crtn9fZoCb6Q45RKGwTl0Kta1VNIp5jmfCGVvBIN+gxvZcZ5PULZ00Z2QnTBqmH2nvOLn/H/LmKhkpU46c/ylVRDMcQWGqEZJ+nDrBTon3XcgIqzryVBVQ+G3w0m5JYDR+Tq0A7X6PIBDkMRJwjthMXDFByOWDlp2m/RqxXDNVcG6utw8lPem3GFF0rWGxwb/c4KWIt77mRxNxC2q4Z1cWp1jH0AoslnyVNRcKs+FP9bgWdQPAabEo4me+6Ai/rdEaNKiBUqzCTioL5tv3agGqw9ZygKxY3UEZj9/pxoJpucbE9okrA8yaBogRdRow3k/zF14031mVQ/GFVm4s4JH7c=
+  app: herokuegctest
